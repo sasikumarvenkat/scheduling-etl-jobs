@@ -65,7 +65,7 @@ public class ScheduledTasks {
                     .setMainClass("com.example.test").setMaster("local").setAppName("Spark Word Count")
                     .setConf(SparkLauncher.DRIVER_MEMORY, "1g").addAppArgs("/home/sasi/Documents/spark/input.txt").
                             addAppArgs("/home/sasi/Documents/sasi/output1").launch();
-            LOGGER.info("Spark Pi Started.");
+            LOGGER.info("Spark Word Count Started.");
             InputStreamReaderRunnable inputStreamReaderRunnable = new InputStreamReaderRunnable(spark.getInputStream(), "input");
             Thread inputThread = new Thread(inputStreamReaderRunnable, "LogStreamReader input");
             inputThread.start();
