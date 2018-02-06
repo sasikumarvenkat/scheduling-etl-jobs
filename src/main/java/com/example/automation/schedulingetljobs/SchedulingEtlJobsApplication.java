@@ -8,7 +8,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @SpringBootApplication
 public class SchedulingEtlJobsApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SchedulingEtlJobsApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SchedulingEtlJobsApplication.class, args);
+    }
 }
