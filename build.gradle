@@ -30,6 +30,14 @@ repositories {
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter')
-		
+	compile('org.springframework.boot:spring-boot-starter-validation')
+	
+	//Spark Core Dependency
+	compile('org.apache.spark:spark-core_2.11:2.2.0')
+	
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+
+configurations {
+    compile.exclude module: 'spring-boot-starter-logging'
 }
